@@ -1,0 +1,128 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 53,
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "start": 0,
+      "end": 28,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 6,
+          "end": 27,
+          "id": {
+            "type": "Identifier",
+            "start": 6,
+            "end": 9,
+            "name": "add"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "start": 12,
+            "end": 27,
+            "id": null,
+            "expression": true,
+            "generator": false,
+            "async": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "start": 13,
+                "end": 14,
+                "name": "a"
+              },
+              {
+                "type": "Identifier",
+                "start": 16,
+                "end": 17,
+                "name": "b"
+              }
+            ],
+            "body": {
+              "type": "BinaryExpression",
+              "start": 22,
+              "end": 27,
+              "left": {
+                "type": "Identifier",
+                "start": 22,
+                "end": 23,
+                "name": "a"
+              },
+              "operator": "+",
+              "right": {
+                "type": "Identifier",
+                "start": 26,
+                "end": 27,
+                "name": "b"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 29,
+      "end": 52,
+      "expression": {
+        "type": "CallExpression",
+        "start": 29,
+        "end": 51,
+        "callee": {
+          "type": "MemberExpression",
+          "start": 29,
+          "end": 40,
+          "object": {
+            "type": "Identifier",
+            "start": 29,
+            "end": 36,
+            "name": "console"
+          },
+          "property": {
+            "type": "Identifier",
+            "start": 37,
+            "end": 40,
+            "name": "log"
+          },
+          "computed": false,
+          "optional": false
+        },
+        "arguments": [
+          {
+            "type": "CallExpression",
+            "start": 41,
+            "end": 50,
+            "callee": {
+              "type": "Identifier",
+              "start": 41,
+              "end": 44,
+              "name": "add"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "start": 45,
+                "end": 46,
+                "value": 2,
+                "raw": "2"
+              },
+              {
+                "type": "Literal",
+                "start": 48,
+                "end": 49,
+                "value": 3,
+                "raw": "3"
+              }
+            ],
+            "optional": false
+          }
+        ],
+        "optional": false
+      }
+    }
+  ],
+  "sourceType": "module"
+}
